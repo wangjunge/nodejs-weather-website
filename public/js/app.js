@@ -6,8 +6,14 @@ console.log('Client side javascript is loaded!')
 //     })
 // })
 
-fetch('http://localhost:3000/weather?address=boston').then((response) => {
+fetch('/weather?address=boston').then((response) => {
     response.json().then((data)=>{
         console.log(data)
     })
 })
+
+// fetch('http://localhost:3000/weather?address=boston').then((response) => {
+//     response.json().then((data)=>{
+//         console.log(data)
+//     })
+// })
